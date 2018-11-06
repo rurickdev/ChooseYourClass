@@ -2,10 +2,13 @@ package com.mosiacogeek.chyc;
 
 import android.content.Intent;
 import android.os.Handler;
+/*
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+*/
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -17,6 +20,10 @@ import android.widget.TextView;
 
 import java.util.EmptyStackException;
 import java.util.Stack;
+
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -187,6 +194,7 @@ public class MainActivity extends AppCompatActivity {
                 "",
                 "",
                 R.string.question_one);
+        pregunta.setMovementMethod(new ScrollingMovementMethod());
 
     }
 
