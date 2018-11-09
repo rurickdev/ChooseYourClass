@@ -77,6 +77,7 @@ Fusce finibus risus et leo sagittis lacinia in non sapien. Sed et semper sapien,
     <string name="text_presentation">Have you ever fantasized about this question. If you are flung into the dungeons and dragons world of fame where holders lurk underground labyrinths and dragons rule the skies above. How would your story be told.</string>
     <string name="text_start">Start</string>
     <string name="text_auxiliar_work">Work In Progress</string>
+    <string name="text_empty" />
 
     <!-- Otros -->
     <string name="about">This app was made based on "Don't Stop Thinking" youtube videos with the rightful permissions</string>
