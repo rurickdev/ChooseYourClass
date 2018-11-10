@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".About">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -25,16 +25,18 @@
             android:id="@+id/about_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
             android:src="@mipmap/ic_launcher_round"
-            android:padding="16dp"/>
+            android:padding="16dp"
+            android:layout_below="@+id/my_action_bar_about"/>
 
         <TextView
             android:id="@+id/about_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/about"
-            android:padding="16dp"/>
+            android:padding="16dp"
+            android:layout_below="@+id/about_image"/>
 
         <!-- ToDo: corregir botones-->
         <LinearLayout
@@ -43,27 +45,25 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center"
-            android:paddingHorizontal="16dp">
+            android:layout_below="@+id/about_text">
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:layout_margin="8dp"
                 android:text="youtube"
-                android:theme="@style/MyButton"/>
+                android:theme="@style/MyButton"
+                android:onClick="openYoutube"/>
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:layout_margin="8dp"
                 android:text="Developer"
-                android:theme="@style/MyButton"/>
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Others"
-                android:theme="@style/MyButton"/>
+                android:theme="@style/MyButton"
+                android:onClick="openGithub"/>
 
         </LinearLayout>
-    </LinearLayout>
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

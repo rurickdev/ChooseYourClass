@@ -35,7 +35,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
-            android:justificationMode="inter_word"
             android:text="@string/text_presentation"
             android:layout_below="@id/img_cabecera"
             android:layout_above="@+id/main_layout_buttons"
@@ -55,7 +54,7 @@
                 android:orientation="horizontal"
                 android:tag="presentacion">
 
-                <com.google.android.material.button.MaterialButton
+                <Button
                     android:id="@+id/btn1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"

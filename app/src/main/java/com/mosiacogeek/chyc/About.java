@@ -1,15 +1,13 @@
 package com.mosiacogeek.chyc;
 
-//import android.content.Intent;
-/*
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-*/
 import androidx.core.app.NavUtils;
+
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 import androidx.appcompat.app.ActionBar;
@@ -47,4 +45,20 @@ public class About extends AppCompatActivity {
         if(ab!= null)
             ab.setDisplayHomeAsUpEnabled(true);
     }
+
+
+    public void openYoutube(View view) {
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse("https://www.youtube.com/channel/UCRwnhxFZrL2yY5I60d5Ae_Q"));
+        startActivity(i);
+    }
+
+    public void openGithub(View view) {
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse("https://github.com/skintigth"));
+        startActivity(i);
+    }
+
 }
+
+

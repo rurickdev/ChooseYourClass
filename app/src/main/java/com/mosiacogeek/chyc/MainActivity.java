@@ -347,7 +347,6 @@ public class MainActivity extends AppCompatActivity {
         boton1.setTag("start");
     }
 
-
     //Se ejecuta cuando precionas el boton de regresar a la pantalla anterior
     public void anterior(){
         try {
