@@ -48,8 +48,14 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.reiniciar:
-                navegacion.removeAllElements();
-                presentation(this.findViewById(android.R.id.content));
+                navegacion.removeAllElements();generarPantalla("presentacion",
+                    R.mipmap.img_question_main_2,
+                    R.string.text_presentation,
+                    1,
+                    new Integer[]{R.string.btn_start},
+                    new String[]{"start"});
+                barra.setNavigationIcon(R.mipmap.ic_launcher_round);
+                this.setTitle("ChYC");
                 return true;
             case R.id.about:
                 Intent intent = new Intent(this, About.class);
@@ -127,8 +133,15 @@ public class MainActivity extends AppCompatActivity {
         Log.d("mySwitch",tag);
         switch (tag) {
             case "presentacion":
+                generarPantalla("presentacion",
+                    R.mipmap.img_question_main_2,
+                    R.string.text_presentation,
+                    1,
+                    new Integer[]{R.string.btn_start},
+                    new String[]{"start"});
+                barra.setNavigationIcon(R.mipmap.ic_launcher_round);
                 this.setTitle("ChYC");
-                presentation(view);
+                //presentation(view);
                 break;
             case "start":
                 generarPantalla(tag,
@@ -334,17 +347,13 @@ public class MainActivity extends AppCompatActivity {
     }
     //ToDo: pasarlo a usar generarPantalla()
     public void presentation(View view){
-        //this.setTitle("ChYC");
-        layout.setTag("presentacion");
-        barra.setNavigationIcon(R.mipmap.ic_launcher_round);
-        imagen.setImageResource(R.mipmap.img_question_main);
-        pregunta.setText(R.string.text_presentation);
-        boton1.setVisibility(android.view.View.VISIBLE);
-        boton2.setVisibility(android.view.View.GONE);
-        boton3.setVisibility(android.view.View.GONE);
-        boton4.setVisibility(android.view.View.GONE);
-        boton1.setText(R.string.btn_start);
-        boton1.setTag("start");
+
+        generarPantalla("presentacion",
+                R.mipmap.img_question_main_2,
+                R.string.text_presentation,
+                1,
+                new Integer[]{R.string.btn_start},
+                new String[]{"start"});
     }
 
     //Se ejecuta cuando precionas el boton de regresar a la pantalla anterior

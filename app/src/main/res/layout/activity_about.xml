@@ -27,7 +27,9 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:src="@mipmap/ic_launcher_round"
-            android:padding="16dp"
+            android:padding="50dp"
+            android:scaleX="2"
+            android:scaleY="2"
             android:layout_below="@+id/my_action_bar_about"/>
 
         <TextView
@@ -38,32 +40,109 @@
             android:padding="16dp"
             android:layout_below="@+id/about_image"/>
 
-        <!-- ToDo: corregir botones-->
-        <LinearLayout
+        <RelativeLayout
             android:id="@+id/about_layout_buttons"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:gravity="center"
             android:layout_below="@+id/about_text">
 
-            <Button
-                android:layout_width="0dp"
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.MaterialComponents.CardView"
+                android:id="@+id/about_card_developer"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_margin="8dp"
-                android:text="youtube"
-                android:theme="@style/MyButton"
-                android:onClick="openYoutube"/>
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_margin="8dp"
-                android:text="Developer"
-                android:theme="@style/MyButton"
-                android:onClick="openGithub"/>
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:elevation="1dp"
+                app:cardUseCompatPadding="true">
 
-        </LinearLayout>
+                <RelativeLayout
+                    android:id="@+id/about_rl_card1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/about_card1_avatar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_launcher"/>
+
+                    <TextView
+                        android:id="@+id/about_rl_card1_Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Skintigth"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:layout_toEndOf="@id/about_card1_avatar"
+                        android:layout_marginStart="16dp"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="github"
+                        app:icon="@drawable/ic_button_gitcat"
+                        android:theme="@style/MyButton"
+                        android:onClick="openGithub"
+                        android:layout_below="@id/about_card1_avatar"/>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.MaterialComponents.CardView"
+                android:id="@+id/about_card_youtube"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:elevation="1dp"
+                android:layout_below="@id/about_card_developer"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:id="@+id/about_rl_card2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/about_card2_avatar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_launcher"/>
+
+                    <TextView
+                        android:id="@+id/about_rl_card2_Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dont Stop Thinking"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:layout_toEndOf="@id/about_card2_avatar"
+                        android:layout_marginStart="16dp"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="youtube"
+                        app:icon="@drawable/ic_button_yotube"
+                        android:theme="@style/MyButton"
+                        android:onClick="openYoutube"
+                        android:layout_below="@id/about_card2_avatar"/>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </RelativeLayout>
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

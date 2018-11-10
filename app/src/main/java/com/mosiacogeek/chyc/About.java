@@ -44,6 +44,8 @@ public class About extends AppCompatActivity {
         ActionBar ab = getSupportActionBar();
         if(ab!= null)
             ab.setDisplayHomeAsUpEnabled(true);
+
+        this.setTitle("About");
     }
 
 
