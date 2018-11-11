@@ -9,7 +9,7 @@
 ChYC puts you in a simple situation where you will have to choose a reaction and based on that reactions it will give you the best class for you to play in Dungeons & Dragons 5e.
 The questions and situation its basen on youtube game [Discover Your D&D Class](https://youtu.be/-A4eYV-mhao) made by [Don't Stop Thinking](https://www.youtube.com/channel/UCRwnhxFZrL2yY5I60d5Ae_Q)
 
-![](header.png)
+![Header Image][header-image]
 
 ## Installation
 **Note this is an alpha release, everything should works but it's possible it crash sometimes**
@@ -23,7 +23,9 @@ The questions and situation its basen on youtube game [Discover Your D&D Class](
 
 ## Usage example
 
-**ToDo: Add Gif Getting Wizard Class**
+**Getting Wizard Class**
+
+![Example Wizard][example-image]
 
 ## Release History
 
@@ -32,15 +34,26 @@ The questions and situation its basen on youtube game [Discover Your D&D Class](
 
 ## Contact Me
 
-Rurick M. Poisot a.k.a. Skintigth 
+### Developer ###
 
-Twitter [@Skintigth](https://twitter.com/skintigth)
+Rurick M. Poisot a.k.a. Skintigth 
  
 eMail [skintigthvader@gmail.com](mailto:skintigthvader@gmail.com)
 
 Web Page [Mosaico Geek](mosaicogeek.blogspot.com)
 
 GitHub [Skintigth](https://github.com/skintigth)
+
+### Questions Designer ###
+
+YouTube Channel [Don't Stop Thinking](https://www.youtube.com/channel/UCRwnhxFZrL2yY5I60d5Ae_Q)
+
+Web Page [Don't Stop Thinking](https://dontstopthinking.com/)
+
+Facebook [@CJLeungDST](https://www.facebook.com/CJLeungDST/)
+
+Twitter [@CJLeung_DST](https://twitter.com/CJLeung_DST)
+
 
 Distributed under the GPL3 license. See ``LICENSE`` for more information.
 
@@ -55,5 +68,6 @@ Distributed under the GPL3 license. See ``LICENSE`` for more information.
 [npm-license]: https://img.shields.io/badge/License-GPL3-blue.svg
 [npm-system-version]: https://img.shields.io/badge/Operating%20Sistem-Android%205.1%2B-brightgreen.svg
 [wiki]: https://github.com/skintigth/ChYC/wiki
-[example-image]: https://github.com/skintigth/ChYC/wiki
+[example-image]: https://github.com/skintigth/ChYC/blob/master/Screenhots/Example_Wizard.gif
+[header-image]: https://github.com/skintigth/ChYC/blob/master/Screenhots/header.png
 
