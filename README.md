@@ -4,7 +4,7 @@
 ![NPM Version][npm-image]
 ![App zise][npm-size]
 ![License][npm-license]
-![Sistem Version][npm-system-version]
+![SYstem Version][npm-system-version]
 
 ChYC puts you in a simple situation where you will have to choose a reaction and based on that reactions it will give you the best class for you to play in Dungeons & Dragons 5e.
 The questions and situation its basen on youtube game [Discover Your D&D Class](https://youtu.be/-A4eYV-mhao) made by [Don't Stop Thinking](https://www.youtube.com/channel/UCRwnhxFZrL2yY5I60d5Ae_Q)
