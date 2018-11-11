@@ -63,7 +63,7 @@ Distributed under the GPL3 license. See ``LICENSE`` for more information.
 
 <!-- Markdown link & img dfn's -->
 <!-- Modificar estás variables -->
-[npm-image]: https://img.shields.io/badge/Version-Alpha--0.1-red.svg
+[npm-image]: https://img.shields.io/badge/Version-Alpha--0.0.1-red.svg
 [npm-size]: https://img.shields.io/badge/Size-5.88MB-green.svg
 [npm-license]: https://img.shields.io/badge/License-GPL3-blue.svg
 [npm-system-version]: https://img.shields.io/badge/Operating%20System-Android%205.1%2B-brightgreen.svg
