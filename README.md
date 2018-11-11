@@ -44,7 +44,7 @@ Web Page [Mosaico Geek](mosaicogeek.blogspot.com)
 
 GitHub [Skintigth](https://github.com/skintigth)
 
-### Questions Designer ###
+### Creative Genius ###
 
 YouTube Channel [Don't Stop Thinking](https://www.youtube.com/channel/UCRwnhxFZrL2yY5I60d5Ae_Q)
 
