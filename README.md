@@ -2,7 +2,7 @@
 > This app gives you a class of Dungeons & Dragons 5e based on 3 questions in a situation.
 
 ![NPM Version][npm-image]
-![App zise][npm-size]
+![App size][npm-size]
 ![License][npm-license]
 ![SYstem Version][npm-system-version]
 
@@ -31,18 +31,6 @@ The questions and situation its basen on youtube game [Discover Your D&D Class](
 
 * 0.0.1
     * First Alpha Release
-
-## Contact Me
-
-### Developer ###
-
-Rurick M. Poisot a.k.a. Skintigth 
- 
-eMail [skintigthvader@gmail.com](mailto:skintigthvader@gmail.com)
-
-Web Page [Mosaico Geek](mosaicogeek.blogspot.com)
-
-GitHub [Skintigth](https://github.com/skintigth)
 
 ### Creative Genius ###
 
